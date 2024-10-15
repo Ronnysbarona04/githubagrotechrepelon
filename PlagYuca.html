@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgrotechRepelon</title>
+  <link rel="icon" href="planta.ico">
+  <link rel="stylesheet" href="plag.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</head>
+<style>
+  .card {
+    display: flex;
+    width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  }
+  .container p{
+    font-family:sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .card img {
+    width: 100%;
+    height: auto;
+
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+
+  .card-description {
+    color: #666;
+    margin: 8px 0;
+  }
+
+  .card-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .extra-content {
+    display: none;
+    margin-top: 16px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img src="Agro.png" alt="" width="100" height="43">
+
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Anticonceptivos.html">Fertilizantes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Cultivos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ReqYuca.html">Yuca</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqPlatano.html">Platano</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqÑame.html">Ñame</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqLimon.html">Limon</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqMaiz.html">Maiz</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqGuayaba.html">Guayaba</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqSandia.html">Sandia</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqPapaya.html">Papaya</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqFrijol.html">Frijol</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqTomate.html">Tomate</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="ReqEntreOtros.html">Otros</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plagas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="PlagYuca.html">Yuca</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagPlatano.html">Platano</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagÑame.html">Ñame</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagLimon.html">Limon</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagMaiz.html">Maiz</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagGuayaba.html">Guayaba</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagSandia.html">Sandia</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagPapaya.html">Papaya</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="PlagFrijol.html">Frijol</a></li>
+            
+            </ul>
+
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <div class="container">
+    <div class="px-4 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">Plagas de la yuca</h1>
+    </div>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+      <div class="card-component"
+        style="flex: 1; max-width: calc(50% - 16px); margin: 8px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+        <img src="Acaros verde.png" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+        <div style="padding: 16px;">
+          <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Ácaro de la Yuca (Mononychellus tanajoa)</h2>
+          <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">Los ácaros son plagas comunes en los cultivos de
+            yuca y pueden causar daños significativos si no se manejan adecuadamente. Uno de los ácaros más conocidos
+            que afecta la yuca es el ácaro rojo (Tetranychus urticae), el ácaro verde, aunque también hay otros como el
+            ácaro de la yuca (Mononychellus tanajoa).</p>
+          <button class="toggle-button"
+            style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+            más</button>
+        </div>
+        <div class="content" style="padding: 16px; display: none;">
+          <h4 style="color: green;">Sintomas</h4>
+          <p style="font-size: 1em; color: #333;">Por lo general, estos ácaros se alimentan de la parte inferior de las
+            hojas jóvenes, en tallos verdes y brotes auxiliares de yuca. Insertan sus piezas bucales, succionan las
+            células individuales y extraen el contenido, entre otros, la clorofila verde. En las hojas, la actividad
+            alimenticia se observa a simple vista como diminutas manchas cloróticas amarillentas en la lámina. Las
+            infecciones más graves resultan en hojas moteadas con un crecimiento raquítico que posteriormente, pueden
+            morir y caer. El ataque de los brotes terminales da lugar a el síntoma característico de "palo de vela",
+            refiriéndose al aspecto necrótico y a la caída de las puntas del brote. Las plantas de yuca de 2-9 meses de
+            edad son las más vulnerables a la infestación. El ataque severo del ácaro puede dar lugar a la pérdida
+            20-80% del rendimiento del tubérculo. Además, la calidad de los tallos de yuca se ve comprometida, lo que a
+            menudo, resulta en una escasez de materiales de siembra para perpetuar el cultivo.</p>
+          <h4 style="color: green;">Recomendaciones</h4>
+          <h5 style="color: green;">Control orgánico</h5>
+          <p>Varias especies de depredadores reducen eficazmente las
+            poblaciones de ácaros. La introducción de Amblyseius limonicus y A. idaeus puede reducir la infestación
+            de los ácaros verdes en un 50%. Los ácaros depredadores Typhlodromalus aripo y T. manihoti se han
+            establecido en varios países de África, controlando con éxito las poblaciones del ácaro verde de la
+            yuca. Los hongos parásitos del género Neozygites también mostraron buenos resultados en varios países,
+            resultando en un buen control. Los aerosoles que contienen compuestos de aceite de neem también pueden
+            mostrar resultados satisfactorios.</p>
+          <h5 style="color: green;">Tratamiento químico</h5>
+          <p>Opte siempre por un enfoque integrado con medidas preventivas junto con tratamientos biológicos, cuando
+            estén disponibles. No se recomienda el control químico de Mononychellus tanajoa ya que puede resultar en
+            el desarrollo de resistencia y en brotes de enfermedades secundarias. Sólo el acaricida abamectina ha
+            resultado eficaz para el control de la plaga.</p>
+          <h4 style="color: green;">Que lo causó?</h4>
+          <p>Los síntomas son causados por la actividad alimentaria de los
+            ácaros verdes Mononychellus tanajoa y Mononychellus progresivus. Se alimentan de la parte inferior de las
+            hojas jóvenes mediante la inserción de sus partes bucales en los tejidos y la extracción del contenido de
+            las células. Se consideran plagas menores de la yuca, pero bajo condiciones favorables, por ejemplo, durante
+            la estación seca, pueden causar daños significativos. El ácaro puede moverse activamente de una planta a
+            otra, pero también puede ser dispersado por el viento y las salpicaduras de agua. Dado que pueden sobrevivir
+            hasta 60 días en las estacas, el principal vector de los ácaros son a menudo los propios agricultores, que
+            transportan el material de las plantas infestadas entre campos o huertos. Los ácaros jóvenes son de color
+            verde, más tarde se vuelven amarillentos como adultos. Son reconocibles por la discreta segmentación de su
+            cuerpo que les da la apariencia de una sola unidad del cuerpo. Carecen de alas, ojos compuestos y antenas.
+            Las hembras adultas son más grandes que los machos y pueden alcanzar un tamaño de 0.8 mm.</p>
+          <h4 style="color: green;">Medidas preventivas</h4>
+          <ul>
+            <li> Utilice variedades con una buena tolerancia al ácaro. </li>
+            <li> Utilice únicamente esquejes certificados para la siembra.
+            </li>
+            <li> Plante temprano al comienzo de la estación lluviosa, para
+              asegurar una resistencia de la planta suficiente para cuando comience la estación seca. </li>
+            <li> Alterne con cultivos de chícharos, si es posible, en filas
+              dobles o triples, y evite las plantaciones inclinadas. </li>
+            <li> Revise regularmente el campo de yuca para detectar síntomas o
+              avistamientos del ácaro. </li>
+            <li> Evite el transporte de material infestado a los mercados u
+              otros campos, ya que ésta es la causa principal de la dispersión. </li><!---->
+          </ul>
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+            <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+              <li style="color: #007bff;">
+                https://plantix.net/es/library/plant-diseases/800045/cassava-green-spider-mite/</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-component"
+        style="flex: 1; max-width: calc(50% - 16px); margin: 8px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+        <img src="gusano-cachon.jpg" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+        <div style="padding: 16px;">
+          <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Gusano Cachón</h2>
+          <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">El gusano cachon, conocido científicamente como
+            Galleria mellonella, es una plaga que afecta significativamente a los cultivos de yuca (Manihot esculenta).
+            Esta oruga, que pertenece a la familia de las polillas, es reconocida por su capacidad destructiva, y su
+            presencia en los campos de yuca puede tener graves repercusiones en la salud de las plantas y en la
+            producción. </p>
+          <button class="toggle-button"
+            style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+            más</button>
+        </div>
+
+        <div class="content" style="padding: 16px; display: none;">
+          <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">La yuca (Manihot esculenta Crants.) es una de las
+            principales fuentes
+            de energía (calorías para la actividad del cuerpo) para millones de personas que viven en las zonas
+            tropicales y subtropicales del mundo. Para mejorar este cultivo tan útil, se ha hecho un gran esfuerzo de
+            investigación, desde hace más de 30 años, sobre su manejo agronómico y sobre el conjunto de plagas (insectos
+            y ácaros) que se asocian con el cultivo. El gusano cachón de la yuca es una de las plagas más importantes de
+            este cultivo en América tropical. La capacidad migratoria de E. ello, su adaptación a varios climas y su
+            amplio rango de hospederos son las causas de su extensa distribución y de sus ataques esporádicos. </p>
+          <p>Cuando el gusano cachón ataca y desarrolla una población
+            alta, llega a defoliar totalmente el cultivo; en consecuencia,
+            hay un descenso considerable en el rendimiento de raíces
+            de yuca (entre el 18% y el 64% del normal).</p>
+          <h4 style="color: green;">Daño del gusano cachón de la yuca</h4>
+          <p>Se han establecido umbrales de daño, así: 5 larvas/planta
+            en plantaciones de 2 a 5 meses y 29 larvas/planta en cultivos
+            de 7 a 9 meses producen una defoliación total del cultivo; es
+            necesario, por tanto, controlar antes la plagapara evitar el
+            deterioro del cultivo y las pérdidas en la cosecha.</p>
+          <h4 style="color: green;">Metodos de control</h4>
+          <p>El gusano cachón puede manejarse empleando varios
+            métodos. Entre ellos, el control biológico es el más importante
+            porque no contamina el ambiente y es muy efectivo; vienen
+            luego el método cultural (manejo agronómico) y el mecánico
+            (eliminación manual de larvas). La alternativa de último
+            recurso es el control químico.</p>
+          <h5 style="color: green;">Control cultural
+            ¿Manejo del cultivo?</h5>
+          <ol>
+            <li>Voltear la tierra después de la cosecha para permitir la
+              muerte de las pupas (por desecación).</li>
+            <li>Eliminar las malezas para que haya menos plantas
+              hospederas de los adultos del insecto.</li>
+            <li>Hacer rotación de cultivos.</li>
+            <li> Cuando sea posible, sobre todo en cultivos pequeños,
+              hacer recolección manual de las larvas y sumergirlas en
+              agua con ACMP.
+          </ol>
+          <p>Para detectar poblaciones de gusano cachón en cultivos
+            extensos, se recomienda una trampa de luz negra (tipo BL o
+            BLB) que atrapa adultos en vuelo aprovechando su hábito
+            nocturno; así se calcula la cantidad de mariposas presentes
+            en el lote y la posible cantidad de huevos que habría en el
+            cultivo.</p>
+          <p>La trampa de luz es una herramienta para sincronizar ya sea
+            la liberación inundativa de parásitos y predadores -cuando
+            hay poblaciones altas de la plaga- o ya la aplicación de
+            biopesticidas.</p>
+          <h5 style="color: green;">Control biológico
+            ¿Manejo integrado?</h5>
+          <p>El manejo integrado de plagas (o control biológico) emplea
+            las siguientes prácticas de manejo: visitas periódicas a los
+            lotes, registro de la población de insectos, e instalación de trampa de luz negra (tipo BL o BLB) que
+            atrapan adultos en vuelo, lo que reduce las posturas de huevos en el campo.</p>
+          <h5 style="color: green;">Parásitos de huevos</h5>
+          <p>La avispita Trichogramma sp. es un parásito de los huevos
+            del gusano cachón y así controla la población del insecto.
+            Contra esta plaga se recomienda hacer liberaciones de
+            Trichogramma sp. a razón de 50 a 100 pulgadas/ha. Para hacer
+            una liberación, se comprueba que haya posturas frescas
+            (como máximo, 2 días después de haber sido ovipositadas).</p>
+          <p>La técnica más fácil y más económica que se recomienda
+            para hacer la liberación de la avispita es la siguiente: se coloca
+            cada pulgada dentro de un vaso de icopor y se sujeta con
+            alambre; los vasos se colocan luego boca abajo en las plantas
+            (en la cantidad por ha antes indicada); finalmente, las avispitas
+            salen y se distribuyen por toda el área del cultivo.</p>
+          <p>Es bueno revisar el cultivo antes del quinto día después de la
+            liberación de las avispitas para verificar el parasitismo: los
+            huevos parasitados son oscuros o casi negros.</p>
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+            <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+              <li style="color: #007bff;">http://ciat-library.ciat.cgiar.org/Articulos_Ciat/gusano_cachon.pdf</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+      <div class="card-component"
+        style="flex: 1; max-width: calc(50% - 16px); margin: 8px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+        <img src="MOSCA-BLANCA-1.jpg" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+        <div style="padding: 16px;">
+          <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Mosca Blanca De La Yuca</h2>
+          <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">La mosca blanca de la yuca, específicamente
+            <strong>Bemisia tabaci</strong>, es una de las plagas más problemáticas en la agricultura moderna,
+            especialmente en el
+            cultivo de yuca (Manihot esculenta). Este insecto se ha convertido en un desafío significativo para los
+            productores debido a su capacidad de multiplicarse rápidamente y causar daños severos a las plantas.
+          </p>
+          <button class="toggle-button"
+            style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+            más</button>
+        </div>
+        <div class="content" style="padding: 16px; display: none;">
+          <p style="font-size: 1em; color: #333;">Mosca blanca pertenecen al orden Homoptera, chupadores, y la familia
+            Aleyrodidae. De esta
+            familia se ha encontrado 1156 especies de los cuales, únicamente unos pocos, son insectos
+            plagas. Las dos especies de mosca blanca, Bemisia tabaci y Trialeurodes vaporariorum, son
+            los las plagas más significativos en el trópico y en invernaderos. Existen otras especies que
+            son plagas más importantes en regiones específicas. Entre ellas esta Aleurotrachelus socialis
+            que únicamente se ha descubierto en el norte de Suramérica; Venezuela, Colombia y Ecuador,
+            y en este región se comporta como plaga significativa en yuca, Manihot esculenta. La
+            biología se parecen entre los diferentes especies de mosca blanca, pero en el siguiente
+            descripción se refiere específicamente al Aleurotrachelus socialis (Anderson, 2005).
+          </p>
+          <h4 style="color: green;">Ciclo de vida</h4>
+          <p>Al igual a otros mosca blanca, A. Socialis, tiene un desarrollo hemimetabol; un metamorfosis
+            incompleto. De huevo a adulto, el insecto pasa por cuatro estados ninfales sin pasar por el
+            estado de pupa, aunque el cuarto estado ninfal es muy parecido a una pupa y es también
+            llamado pupario. El ciclo de vida es únicamente 30-45 días dependiendo de la temperatura, la
+            humedad relativa y la variedad del hospedero, la yuca. Los siguientes datos están basados en
+            experimentos hecha en un invernadero, con una temperatura de 28 ±1°C, una humedad
+            relativa de 70 % y la variedad susceptible CMC 40. El ciclo total llega a ser 32 días. (Arias,
+            1995). En experimentos con la variedad Mcol 112, una temperatura oscilando entre
+            18-34°C y una humedad relativa entre 19-72 %, el ciclo duró 39 días (Bellotti & Vargas,
+            1986).</p>
+          <p> El tamaño de los huevos es muy pequeña, (longitud 0,08mm y diámetro 0,035mm) y son
+            colocadas en el envés de las hojas. Durante lo primeras horas son transparentes para luego
+            transformarse a ser amarillos o color café. Por el tamaño tan diminuto se percibe los huevos
+            como un polvo blanco en el envés de las hojas. Cada individuo hembra pone 180 a 200
+            huevos en su vida. El tiempo de incubación para los huevos es 10,2 días (Bellotti & Vargas,
+            1986; Arias, 1995).
+            El primer estado ninfal es el único estado ninfal que es móvil y se le nombra ´crawler´ o
+            gateador por lo que se mueve lentamente en la misma hoja; del huevo a otro sitio donde se fija
+            y se queda hasta nacer el adulto. Se fija con la mandíbula con lo cual ingiere savia de la hoja.
+            La ninfa es ovala y tiene aproximadamente 0,25mm de longitud. El color es transparente
+            amarillento. El primer estado tiene tres pares de patas poco desarrolladas y antenas largas.
+            Una característica son los ocho poros, que se puede observar desde el segundo día, en la parte
+            dorsal. Los poros están conectadas con ocho glándulas abdominales de los cuales se secreta
+            una cera blanca. El promedio es 5,1 días para que el gateador se desarrolle al segundo instar
+            ninfal (Bellotti & Vargas 1986; Arias, 1995). En este estado, el insecto esta bien fijado en la
+            hoja, la ninfa se obscurece y la cera del primer estado se ve encima de una nueva capa de la
+            cutícula. El cuerpo tiene ahora más quitina y está rodeada de cera blanca secretado de
+            glándulas laterales y dorsales. Después de 3,5 días se transforma al tercer estado ninfal lo que
+            implica que el insecto se obscurece aún más hacia marrón negro y la cera es más abundante.
+            Después 4,1 días se transforma al último estado ninfal, el cuarto estado, que también se llama
+            pupario por lo que el adulto se desarrolla dentro de la cutícula. El insecto se crece, se
+            obscurece y la secreción disminuye. Órganos, como ojos se desarrolla, aunque el cambio
+            visible en este estado es mínima. El estado dura 9,4 días (Arias, 1995).
+            El individuo adulto se eclosiona de un abertura en forma de T que es visible en el borde
+            frontal en del pupario. El tamaño está entre dos y tres milímetros, siendo la hembra más
+            grande que el macho. Los adultos tienen patas y antenas muy desarrolladas y vuelas entre
+            plantas y entre cultivos. El cuerpo esta cubierta de una cera blanca que le da un color blanco y
+            mate. Las alas tienen tres a cuatro venas y son totalmente pálidas o tiene puntos marrones o
+            grises. Los antenas tiene siete segmentos y la mandíbula está desarrollado para perforar y
+            chupar del tejido (Bellotti & Vargas, 1986; USDA, www). Los adultos se mueven de las hojas
+            de donde fueron eclosionados hacia hojas verdes en el cogollo para ingerir savia. Las hembras
+            eligen hojas jóvenes para poner los huevos para que la mosca blanca pueda nutrirse los 32
+            días que pase hasta la próxima generación se desarrolla. En la medida que crezca la planta, los
+            individuos “se desplaza hacia abajo” de la planta; los huevos y adultos se encuentran en el
+            cogollo, las ninfas en la mitad y puparios en la parte baja de la planta. Dependiendo de las
+            incursiones del insecto se puede encontrar los diferentes estados mezclados en la planta
+            (Arias, com. per.; Holguín, com. per.; Pérez, com. per.).</p>
+          <h4 style="color: green;">Daños en el cultivo de yuca</h4>
+          <p>Yuca es un cultivo que no esta, en general, muy atacada de plagas debido a su alta contenido
+            de acido cyanido. Actualmente cuando el tamaño y la frecuencia de cultivos monoculturales
+            se incrementa, se aumenta también la presión selectiva de los artrópodos y varios
+            populaciones han desarrollado una resistencia hacia el ácido cyanido (CAD, www; Bellotti et
+            al., 2002). A. socialis ha llegado a ser una plaga dado a su comportamiento y su composición.
+            Tiene un ciclo de vida relativamente corta, se reproduce rápido (aprox. 200 huevos/hembra) y
+            tiene una capacidad de volar muy alta. Además tiene una capa cerosa encima de la
+            epicutícula. La epicultícula esta formada por tres capas; cuticulina, capa cerosa y capa
+            12 cementera lo que aún más dificulta el control de insecticidas, sean de efecto químico,
+            biológico o con efecto físico (Holguín, 2001; Petterson, 1989).
+            A. socialis causa daño directo e indirecto. El daño directo es debido a que adultos y ninfas se
+            alimenta de la savia del floema y de esta manera disminuye los nutrientes para la planta. La
+            succión de los adultos causa hojas amarillentas y las hojas se doblan, se arrugan y finalmente
+            se enrollan totalmente. Las ninfas causan puntos cloróticos en las hojas. La disminución de
+            nutrientes en la planta baja la cosecha y afecta además la posibilidad de emplear el tallo como
+            estaca de propagación (CAD, www; Bellotti, 2005). La disminución de la cosecha esta
+            relacionada con la prolongación del ataque, bajando la cosecha 5, 42 y 79% después de 1, 6 y
+            11 meses respectivamente. Otros ensayos han mostrado pérdidas de 90% después un ataque
+            de 11 meses (Bellotti & Vargas, 1986).
+            Los daños indirectos son relacionados con la mielecilla que secreta la mosca blanca. En la
+            melaza se desarrolla la fumagina; hongos saprofitos, como el predominante Capnodium sp.
+            Los hongos pueden cubrir toda la superficie de las hojas y por ende inhibir la fotosíntesis,
+            dificultando la respiración y disminuir el crecimiento de la yuca (Bellotti & Vargas, 1986;
+            SJV, www1).
+            Otro daños indirectos de la mosca blanca, es la transmisión de virus. Virus transmitido a
+            través de A. socialis no ha sido reportada pero otros especies de mosca blanca como B. tabaci
+            es un vector importante de muchos virus de la familia Geminiviridae y del géneros
+            Begomovirus (Anderson, 2005). Habido sospechas de que A. socialis ha transmitido la
+            enfermedad Cuero de Sapo a la yuca aunque todavía no se conoce bien (Holguín, com. per.).
+            Los virus de la mosca blanca, WTS (whitefly transmitted viruses) están entre los infecciones
+            de virus más destructivos que muchas veces causan una disminución de la cosecha total. Las
+            más extendidas son el virus del mosaico africano de la yuca ACMV (african cassava
+            mosaicvirus) que se encuentra en todos los países africanos que cultiven yuca. En
+            Latinoamérica B. tabaci es vector del virus del mosaico dorado BGMV (golden mosaic virus)
+            y del virus del mosaico dorado amarillo BGYMV (Bean golden yellow mosaic virus) en
+            tomate, causando grandes pérdidas económicas. La mosca blanca T. vaporariorum transmite
+            BGYMV a fríjol con los mismos resultado graves (Anderson, 2005). Hasta el momento el
+            cultivo de yuca en Colombia ha sido salvado de estos virus aunque recientemente se ha
+            encontrado que Bemisia tabaci, biotipo B puede adaptarse y propagarse en plantas de yuca.
+            Ahora se preocupa de su posible capacidad de transmitir ACMV en Latinoamérica, siendo
+            susceptibles las variedades de yuca, usados en Colombia (Carabalí et al., 2005a, 2005b).
+          </p>
+          <h4 style="color: green;">Control de mosca blanca</h4>
+          <p>Yuca Manihot esculenta pertenece a la familia Euphorbiaceae y es un cultivo semi-anual de la
+            cual se cosecha los tubérculos después de entre ocho y dieciocho meses dependiendo de la
+            variedad y condiciones del cultivo. En el control de mosca blanca en yuca se emplea una
+            variedad de métodos como: pesticidas con efecto sintético, biológico y físico, variedades
+            resistentes, control biológico y prácticas culturales.
+          </p>
+          <p>Tradicionalmente se ha cultivado yuca junto con otros cultivos como la leguminosa caupí,
+            Vigna unguiculata y maíz, Zea mays (CAD, www; Moreno, 1992). Investigaciones ha
+            mostrado que co-cultivación entre maíz y caupí conllevó a que la población de
+            Aleurotrachelus socialis y Trialeurodes variabilis disminuyó, en comparación con yuca en
+            monocultivo. La planta de yuca tiene un crecimiento menor en co-cultivación que en
+            13 monocultura lo que contribuye a disminuir el ataque dado que las populaciones de A. socialis
+            están influenciadas del acceso de nutrientes y espacio. Cultivación con caupí y yuca en
+            conjunto, resultó en menor oviposition de A. socialis que con maíz y yuca, la diferencia a
+            monocultura fue de 69%, respectivo 54%. La pérdida de cosecha en la investigación estaba en
+            relación a la densidad de mosca blanca por hoja. Con caupí y yuca la pérdida alcanzó 18%
+            mientras la perdida en otros tratamientos, inclusive monocultura fue 58-65% (Gold, 1990).
+            En la parte oeste de Colombia, en el Valle del Cauca se hizo recientemente una encuesta sobre
+            el uso de métodos de control de mosca blanca en yuca. Los resultados mostraron que 60% de
+            los agricultores empleaba productos químicos, 10% utilizaba “control alternativa” y 30% no
+            hicieron ningún control. Entre los productos químicos empleados estaba dimetoat, malation y
+            cypermetrina. Entre los productos “alternativas” se mencionó petróleo, hypoclorit, aceite de
+            cocina y jabón de coco (Holguín, 2001). Las insecticidas más usados en Colombia contiene
+            los sustancias activas: imidakropid, tiametoxam y cypermetrina (Aleán et al., 2004). El uso de
+            insecticidas para el control de mosca blanca A. socialis se considera ser sobredimensionado
+            (CAD, 2003; Holguín, 2001).</p>
+          <p>Como método de control de la plaga se incluye tamben la época de sembrar. En Colombia se
+            siembra normalmente yuca durante todo el año gracias a la tolerancia de sequía del cultivo.
+            Pero al planear la siembra para la época de lluvia, la populación puede disminuir por las
+            lluvias y se protege las plantas durante los primeros meses que son los más sensibles de un
+            ataque (Arias, 1995).
+            El control biológico ha sido investigado en diferentes áreas como por ejemplo de predadores,
+            parasitoides y microorganismos. De éstas ha salido resultados prometedoras de hongos
+            patógenos como control de insectos Aleyrodidae, gracias a su capacidad de entrar en la
+            cutícula. Los hongos que han mostrado mayor efecto son principalmente Verticillium lecani,
+            Metarhizium anisoplae, Paecilomyces y Beauveria basiana (Aleán et al., 2004; CAD, www).
+            Todavía esta la investigación de enemigos naturales en la fase de identificación y los
+            parasitiodes mencionados en la literatura no se emplea en gran escala en el cultivo de yuca.</p>
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+            <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+              <li style="color: #007bff;">
+                https://impactodelamoscablanca.blogspot.com/2012/07/bienvenidos-buenas-para-todos-aqui-la.html</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-component"
+        style="flex: 1; max-width: calc(50% - 16px); margin: 8px; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+        <img src="Trips_amarillo.jpg" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+        <div style="padding: 16px;">
+          <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Los trips</h2>
+          <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">Los trips son insectos diminutos pertenecientes
+            al orden Thysanoptera y representan una amenaza significativa para los cultivos de yuca (Manihot esculenta).
+            Entre las especies más comunes que afectan la yuca se encuentran Frankliniella occidentalis y Thrips tabaci.
+            Estos insectos son conocidos por su capacidad para causar daños directos e indirectos, afectando la salud y
+            el rendimiento de las plantas.</p>
+          <button class="toggle-button"
+            style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+            más</button>
+        </div>
+        <div class="content" style="padding: 16px; display: none;">
+          <p style="font-size: 1em; color: #333;">Trips de la yuca. Las plagas de la yuca comprenden un amplio rango de
+            artrópodos según la etapa de desarrollo del cultivo en que atacan. Las plagas pueden causar daño a la yuca
+            por reducción del área foliar y de la tasa fotosintética, lo que resulta en disminución del rendimiento. El
+            Trips se encuentra entre las plagas de la yuca mayormente reportadas en atlantico.</p>
+          <h4 style="color: green;">Características</h4>
+          <p>Son muy pequeños por lo que pasan sin ser notados, y son detectados generalmente por las lesiones que
+            dejan, tienen color amarillo en estado ninfal y pardo en estado adulto. Poseen aparato bucal raspador
+            picador.</p>
+          <h4 style="color: green;">Ciclo biológico</h4>
+          <p>La metamorfosis de este orden es paurometábola o gradual, pareciéndose mucho a la metamorfosis holometábola
+            o completa.<br>
+
+            Pasan del huevo a 2 estados ninfales que reciben el nombre de larvas, pues no presentan alas externas, ni
+            siquiera vestigiales.<br>
+
+            Le suceden otros 2 estados ninfales denominados prepupa y pupa. En el primero aparecen 4 muñones (alas) que
+            se ven perfectamente y que llegan al segmento abdominal. En la pupa ya son tan largos como para llegar al
+            octavo segmento del abdomen.<br>
+
+            El tercer estadio ninfal es inofensivo y no se alimenta (a este estadio se le denomina prepupa), a
+            continuación se transforman en pupa y finalmente en adulto.</p>
+          <h5 style="color: green;">Huevos</h5>
+          <p>Los trips que tienen valor económico o agrícola se agrupan casi todos dentro del suborden Terebrantia, que
+            se caracteriza porque las hembras tienen el oviscapto en forma de sierra y con este lesionan el tejido de la
+            hoja donde ponen los huevos.</p>
+          <h5 style="color: green;">Ninfas</h5>
+          <p>Son de color amarillo y difieren de los adultos porque son más pequeñas y carecen de alas en los dos
+            primeros
+            estadios. El tercer estadio ninfal (prepupa) es muy parecido al segundo estadio ninfal, solo que en el
+            aparecen muñones o formas iniciales de alas, el cuarto estadio o pupa tiene parecido con el adulto, y aunque
+            las alas son largas, aun no están totalmente desarrolladas.</p>
+          <p>Todos los estadios ninfales poseen aparato bucal raspador picador y son agresivos o dañinos. Poseen un par
+            de
+            ojos compuestos, pero carecen de ocelos.</p>
+          <p>Adulto Tienen una envergadura de un poco más de 1,0 mm. Posee 4 alas alargadas y finas rodeadas de sedas en
+            forma de flecos capilares. Poseen 2 ojos compuestos y 3 pequeños ocelos. El cuerpo es de color pardo y
+            tienen
+            antenas con 8 artejos o segmentos.</p>
+          <p>Como poseen aparato bucal raspador chupador, constituyen también un estado daño. Se detectan por las
+            lesiones
+            que realizan, las cuales se notan fácilmente, no así el insecto, que es muy pequeño y se confunde además con
+            el color de la hoja.</p>
+          <h4 style="color: green;">Lesiones y daños</h4>
+          <p>Al raspar y chupar la savia deforman las hojas las que adquieren una coloración amarilla y opaca. A veces
+            perforan las hojas en la base del limbo junto a los vasos. Si el ataque es intenso debilita la planta y
+            retrasa su desarrollo, con la posterior influencia negativa en los rendimientos.<br>
+            El daño es mayor en épocas de sequía, este daño se confunde con el efectuado por los ácaros, generalmente la
+            planta si tiene agua y nutrientes suficientes se repone.</p>
+          <h4 style="color: green;">Control</h4>
+          <p>Se pueden aplicar controles agrotécnicos y químicos:</p>
+          <h5 style="color: green;">Control agrotecnico</h5>
+          <ul>
+            <li>No establecer campos junto a plantaciones en ciclo avanzado o terminando su vida útil.</li>
+            <li>Mantener el cultivo y alrededores libres de plantas indeseables.</li>
+            <li>Mantener buenos niveles hídricos y nutricionales al cultivo.</li>
+          </ul>
+          <h5 style="color: green;">Control Quimico</h5>
+          <ul>
+            <li>Bi-58 al 38% EC.</li>
+          </ul>
+          <p>Methil Parathion 57% EC. </p>
+          <h4 style="color: green;">Enemigos naturales</h4>
+          <ul>
+            <li>Chinches de la familia Lygeidae (orden Hemiptera)</li>
+            <li>Cotorritas (orden Coleoptera, familia Coccinellidae)</li>
+          </ul>
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+            <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+              <li style="color: #007bff;">
+                https://www.ecured.cu/Trips_de_la_yuca</li>
+            </ul>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      const button = document.querySelectorAll('.toggle-button');
+      const content = document.querySelectorAll('.content');
+
+
+      buttons.forEach(button => {
+        button.addEventListener('click', function () {
+          const cardComponent = this.closest('.card-component'); // Busca el componente de tarjeta correspondiente
+          const content = cardComponent.querySelector('.content'); // Selecciona el contenido de esa tarjeta
+          const isVisible = content.style.display === 'block';
+
+          // Cierra todos los contenidos (opcional, puedes omitir esto si quieres permitir múltiples abiertos)
+          document.querySelectorAll('.content').forEach(c => c.style.display = 'none');
+          buttons.forEach(b => b.textContent = 'Leer más');
+
+          // Si el contenido no estaba visible, ábrelo
+          if (!isVisible) {
+            content.style.display = 'block';
+            this.textContent = 'Leer menos';
+          }
+        });
+      });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container" style="margin-top: 50px;">
+      <div class="row text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis col-12">Enfermedades de la Yuca</h1>
+      </div>
+      <div
+        style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; max-width: 100%; margin: auto; margin-top: 20px;">
+        <div class="card-component"
+          style="flex: 1 1 calc(50% - 16px); max-width: calc(50% - 16px); border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+          <img src="Mildiu.jpg" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+          <div style="padding: 16px;">
+            <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Mildew (mildiú)</h2>
+            <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">El <strong> mildiu</strong> en la yuca es una
+              enfermedad causada por hongos del género Phytophthora, que puede tener un impacto significativo en la
+              salud
+              de las plantas y la producción del cultivo. Esta enfermedad se caracteriza por afectar principalmente
+              las
+              hojas y los brotes, causando daños que pueden reducir el rendimiento</p>
+            <button class="toggle-button"
+              style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+              más</button>
+          </div>
+          <div class="content" style="padding: 16px; display: none;">
+            <p style="font-size: 1em; color: #333;">En el mundo del cultivo y la agricultura, existen una basta multitud
+              de plantas, así como sucede en la vida de los humanos. Nuestra cosecha puede verse dañada por este tipo de
+              aflicciones, la cuales podrían incluso llegar a causar problemas fatales en la tierra en la que plantamos.
+              Entre estos causantes de problemas, la enfermedad del mildiu es una de las que destaca entre la multitud
+              debido a su frecuencia y loes efectos que tiene.</p>
+            <p>Conocer sobre la enfermedad del mildiu es crucial a la hora de mantener la salud de tu cultivo en este
+              caso en el de yuca.
+              Aprendiendo a identificarla con rapidez y sus efectos, te permitirá actuar antes de que esta terrible
+              afección tenga la oportunidad de dañar todo tu cultivo por completo. Aquí te explicaremos todo respecto a
+              cómo luce, cuáles son los efectos que tiene en el cultivo y los aspectos que debes considerar cuando te
+              enfrentas a la enfermedad en tu terreno agrícola.</p>
+            <h4 style="color: green;">¿Qué es exactamente la enfermedad del mildiu?</h4>
+            <p>La enfermedad del mildiu, también conocida como tizón tardío, no es en realidad una sola enfermedad. En
+              la actualidad existen diferentes tipos de mildiu, cada uno atacando de manera ligeramente diferente.<br>
+              De cualquier manera, se trata de una enfermedad en los cultivos que tiene origen principalmente fungi.
+              Esta empieza desarrollándose en el interior de la hoja, para al final mostrarse como un polvo que cubre
+              gran parte de la planta. La enfermedad del mildiu se produce únicamente bajo las condiciones ambientales
+              adecuadas. La humedad alta y prolongada, en conjunto con temperaturas de entre 10° y 20 °C, suelen
+              ocasionar su aparición.
+            <p>Cabe destacar que una de las razones por la que la enfermedad del mildiu es tan conocida a nivel mundial
+              es por su área de efecto. Aunque existen varios tipos de mildiu que solo afectan a una sola planta; pero
+              la mayoría atacar a varios tipos de planta y tienen el potencial para incluso acabar con una cosecha
+              completa.</p>
+            <p>Las principales plantas que se encuentran en riesgos son aquellas consideradas como hortofrutícolas;
+              entre
+              las cuales destacan la patata, pepino, tomate, cebolla y calabacín. También podemos mencionar el brócoli,
+              el repollo, las Bruselas y la coliflor.</p>
+            <h4 style="color: green;">¿Cómo identificar la enfermedad del mildiu?</h4>
+            <p>Esta es muy fácil de notar debido a los patrones característicos que suele ocasionar en las plantas. Se
+              trata de manchas angulares amarillas que se extienden en la superficie de las hojas, además de una
+              vellosidad grisácea o felpa en la superficie inferior de la misma. Las hojas también suelen secarse a
+              medida que la mancha avanza, haciendo que finalmente se caiga.</p>
+            <p>Los síntomas pueden identificarse en el interior de la hoja, en los tallos y en los frutos del cultivo
+              afectado. Cabe destacar nuevamente que existen varios tipos de enfermedad del mildiu, por lo que los
+              síntomas pueden variar ligeramente; como por ejemplo en los repollos, que también pueden mostrar lesiones
+              grandes.</p>
+            <h4 style="color: green;">¿Cómo afecta al cultivo y qué puedes hacer?</h4>
+            <p>El principal efecto que tendrá la enfermedad del mildiu en tu cultivo es la muerte de la mayoría de las
+              plantas. Por suerte, <strong>la misma se puede prevenir y tratar con efectividad</strong>, siempre que apliques las
+              técnicas correctas.</p>
+            <p>Para prevenirla, lo principal es llevar un buen control de la humedad, temperatura y aspectos varios en
+              tu cultivo. La ventilación también es crucial. Esto te ayudará a conocer cuándo podría aparecer la
+              enfermedad y <strong>controlar de mejor manera los tratamientos</strong>. Para lograrlo se recomienda el uso de sensores y
+              controladores profesionales, que muestren cifras y estadísticas sobre las condiciones ambientales en tu
+              suelo.</p>
+            <p>Ahora, si la enfermedad del mildiu ya está presente en tu cultivo, actuar rápido será crucial para hacerla
+            desaparecer. Uno de los principales tratamientos que se utilizan es el agua ozonizada, tanto de manera
+            preventiva como curativa.<strong>Los fungicidas también son una buena opción para eliminarla</strong>, aunque siempre debes
+            tener cuidado con los residuos químicos de los productos que uses.</p>
+           <p> A veces el uso de producto no es necesario, y con simplemente llevar un control de la humedad puedes hacer
+            que la enfermedad del mildiu vaya desapareciendo poco a poco. De cualquier manera, lo mejor es evitarla; ya
+            que como sucede con las enfermedades en humanos, <strong>es más difícil controlarla una vez aparece</strong>.</p>
+            <p>Para ello, además de la humedad y temperatura, también debes tener en cuenta la ventilación de la planta y
+            los espacios pequeños. <strong>Cuando no existe buena ventilación y muchas plantas están amontonadas en un solo
+            lugar</strong>, la enfermedad del mildiu también puede aparecer.</p>
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+              <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="color: #007bff;">
+                  https://prismab.com/blog/enfermedad-del-mildiu-que-es-y-como-afecta-a-tu-cultivo/</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-component"
+          style="flex: 1; max-width: 100%; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+          <img src="RayoMarron.png" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+          <div style="padding: 16px;">
+            <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">La Raya Marron De La Yuca</h2>
+            <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">La <strong>enfermedad del rayo marrón</strong>
+              es
+              una patología causada por el hongo Cercospora manihotis, que afecta el cultivo de yuca (Manihot
+              esculenta).
+              Esta enfermedad es reconocida por su capacidad de causar daños significativos en las hojas, lo que puede
+              comprometer el rendimiento del cultivo.</p>
+            <button class="toggle-button"
+              style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+              más</button>
+          </div>
+          <div class="content" style="padding: 16px; display: none;">
+            <p style="font-size: 1em; color: #333;">El rayado marrón de la yuca, también conocido como la enfermedad del
+              estriado marrón, es una patología viral que afecta gravemente el cultivo de yuca (Manihot esculenta). Esta
+              enfermedad se ha convertido en una preocupación creciente, especialmente en regiones como África, donde se
+              prevé que pueda convertirse en una epidemia si no se toman medidas adecuadas. La enfermedad se caracteriza
+              por la aparición de bandas amarillas o necróticas en las hojas, que eventualmente se fusionan para formar
+              grandes manchas marrones, afectando tanto la parte aérea como los tubérculos de la planta.</p>
+            <h4 style="color: green;">Consecuencias</h4>
+            <p>Las consecuencias del rayado marrón son significativas. La enfermedad no solo reduce el rendimiento de la
+              yuca, sino que también afecta la calidad del almidón producido. En estudios recientes, se ha demostrado
+              que los clones de yuca susceptibles al rayado marrón presentan un rendimiento de almidón inferior en
+              comparación con aquellos que son tolerantes.<br>
+              Esto puede tener un impacto directo en la seguridad alimentaria y la economía de las comunidades que
+              dependen de la yuca como fuente principal de alimento y sustento.</p>
+            <h4 style="color: green;">Causas</h4>
+            <p>El rayado marrón es causado por un virus que se transmite principalmente a través de insectos vectores,
+              como los áfidos. La propagación de la enfermedad puede verse exacerbada por prácticas agrícolas
+              inadecuadas, como el uso de material de siembra infectado y la falta de rotación de cultivos. Además, las
+              condiciones climáticas, como la alta humedad y temperaturas cálidas, pueden favorecer la proliferación del
+              virus
+              .</p>
+            <h4 style="color: green;">Métodos de control</h4>
+            <p>Para controlar el rayado marrón, se pueden implementar varias estrategias:</p>
+            <ol class="AnswerParser_AnswerParserOrderedList__kl_2Y">
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Selección
+                    de variedades resistentes</strong>: Es fundamental cultivar variedades de yuca que sean resistentes
+                  al virus. Esto puede ayudar a mitigar los efectos de la enfermedad en el rendimiento.</span>
+              </li>
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Manejo
+                    de vectores</strong>: El control de insectos vectores es crucial. Esto incluye el uso de
+                  insecticidas y prácticas de manejo integrado de plagas para reducir la población de áfidos que
+                  transmiten el virus.</span>
+              </li>
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Prácticas
+                    culturales</strong>: La rotación de cultivos y la eliminación de plantas infectadas son prácticas
+                  recomendadas para reducir la incidencia de la enfermedad. También es importante mejorar la circulación
+                  del aire alrededor de las plantas para evitar condiciones favorables para el desarrollo del
+                  virus.</span>
+              </li>
+            </ol>
+            <h4 style="color: green;">Anticidas</h4>
+            <p>En cuanto a los anticidas, aunque no existen tratamientos específicos para curar la yuca afectada por el
+              rayado marrón, se pueden utilizar fungicidas e insecticidas para controlar los vectores y prevenir la
+              propagación del virus. Sin embargo, es esencial aplicar estos productos de manera responsable y en
+              combinación con otras prácticas de manejo para ser efectivos.</p>
+            <p>En resumen, el rayado marrón de la yuca es una enfermedad seria que requiere atención urgente. La
+              combinación de selección de variedades resistentes, manejo de vectores y prácticas culturales adecuadas
+              puede ayudar a mitigar su impacto en la producción de yuca.</p>
+
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+              <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="color: #007bff;">
+                  https://www.bbc.com/mundo/noticias/2011/11/111116_yuca_raya_marron_epidemia_fao_rg</li>
+                <li style="color: #007bff;">
+                  https://www.cgiar.org/research/publication/asociacion-genomica-resistencia-enfermedad-virus-estria-marron-yuca-accesiones-germoplasma-america-sur/
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-component"
+          style="flex: 1 1 calc(50% - 16px); max-width: calc(50% - 16px); border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+          <img src="TIZON.jpg" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+          <div style="padding: 16px;">
+            <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Tizón foliar</h2>
+            <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">El <strong>tizón foliar</strong> es una
+              enfermedad causada por hongos que afecta el cultivo de yuca (Manihot esculenta). Esta enfermedad puede
+              provocar daños significativos en las hojas, lo que impacta negativamente en la producción y calidad del
+              cultivo.</p>
+            <button class="toggle-button"
+              style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+              más</button>
+          </div>
+          <div class="content" style="padding: 16px; display: none;">
+            <p style="font-size: 1em; color: #333;">El <strong>tizón foliar de la yuca</strong> es una enfermedad
+              causada por hongos que
+              afecta a las hojas de la planta de yuca (Manihot esculenta). Esta patología es un problema significativo
+              en la producción de yuca, ya que puede reducir drásticamente el rendimiento del cultivo. El tizón foliar
+              se manifiesta a través de manchas oscuras en las hojas, que pueden llevar a la defoliación y, en última
+              instancia, a la muerte de la planta si no se controla adecuadamente.</p>
+            <h4 style="color: green;">Causas</h4>
+            <p>El <strong>tizón foliar</strong> es causado principalmente por hongos del género Cercospora, que se
+              desarrollan en
+              condiciones de alta humedad y temperaturas cálidas. La propagación de la enfermedad puede verse favorecida
+              por prácticas agrícolas inadecuadas, como la falta de rotación de cultivos y el uso de material de siembra
+              infectado. Además, la acumulación de residuos de cultivos en el suelo puede servir como fuente de inóculo
+              para futuras infecciones.</p>
+            <h4 style="color: green;">Efectos en la planta</h4>
+            <p>Los efectos del tizón foliar en la planta de yuca son significativos. La aparición de manchas en las
+              hojas reduce la capacidad fotosintética de la planta, lo que a su vez disminuye el crecimiento y el
+              rendimiento de los tubérculos. En casos severos, la defoliación puede ser tan intensa que la planta no
+              logra producir suficientes reservas de almidón, afectando la calidad y cantidad de la cosecha. Esto puede
+              tener un impacto directo en la seguridad alimentaria y la economía de las comunidades que dependen de la
+              yuca como fuente principal de alimento.</p>
+            <h4 style="color: green;">Métodos de control</h4>
+            <p>Para controlar el tizón foliar, se pueden implementar varias estrategias:</p>
+            <ol class="AnswerParser_AnswerParserOrderedList__kl_2Y">
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Selección
+                    de variedades resistentes</strong>: Cultivar variedades de yuca que sean menos susceptibles a la
+                  enfermedad es una de las estrategias más efectivas.</span>
+              </li>
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Manejo
+                    de la humedad</strong>: Es importante evitar el riego excesivo y mejorar la circulación del aire
+                  entre las plantas para reducir la humedad, lo que puede ayudar a prevenir la proliferación del
+                  hongo.</span>
+              </li>
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Prácticas
+                    culturales</strong>: La rotación de cultivos y la eliminación de residuos de cultivos infectados son
+                  prácticas recomendadas para reducir la incidencia de la enfermedad.</span>
+              </li>
+              <li translate="yes" class="AnswerParser_ListItem__XqLOV"
+                style="--list-item-margin-bottom: 0.25rem; --list-item-line-height: 1.625rem; --list-item-font-size: 0.875rem; --list-marker-color: #8b8e8f; --spacing-xs: 0.5rem;">
+                <span class="AnswerParser_TextContainer__z_Iiv" data-testid="youchat-text"
+                  style="--code-background-color: #212121; --code-border-color: rgba(255, 255, 255, 0.15); --code-color: #F8F8F8; --text-container-font-weight: 400; --text-container-line-height: 1.625rem; --text-container-font-size: 0.875rem; --spacing-sl: 0.875rem;"><strong>Aplicación
+                    de fungicidas</strong>: En casos donde la enfermedad ya está presente, el uso de fungicidas puede
+                  ser necesario para controlar la propagación del tizón foliar. Es esencial aplicar estos productos de
+                  manera responsable y en combinación con otras prácticas de manejo.</span>
+              </li>
+            </ol>
+            <h4 style="color: green;">Anticidas</h4>
+            <p>En cuanto a los anticidas, aunque no existen tratamientos específicos que curen la yuca afectada por el
+              tizón foliar, se pueden utilizar fungicidas para controlar la enfermedad y prevenir su propagación. La
+              aplicación de estos productos debe realizarse siguiendo las recomendaciones de expertos y en el momento
+              adecuado para maximizar su efectividad.</p>
+            <p>En resumen, el tizón foliar de la yuca es una enfermedad que requiere atención y manejo adecuado. La
+              combinación de selección de variedades resistentes, manejo de la humedad, prácticas culturales y el uso
+              responsable de fungicidas puede ayudar a mitigar su impacto en la producción de yuca.</p>
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+              <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="color: #007bff;">
+                  https://www.infoagro.com/documentos/el_cultivo_yuca_o_mandioca.asp</li>
+                <li style="color: #007bff;">
+                  https://ve.scielo.org/scielo.php?script=sci_arttext&pid=S0378-78182003000400006</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-component"
+          style="flex: 1; max-width: 100%; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+          <img src="Mosaico.png" alt="Imagen de tarjeta" style="width: 100%; height: auto;" />
+          <div style="padding: 16px;">
+            <h2 style="font-size: 1.5em; margin: 0 0 8px; color: #333;">Mosaico de la yuca</h2>
+            <p style="font-size: 1em; margin: 0 0 16px; color: #2b2b2b;">
+              La <strong>enfermedad del mosaico de la yuca</strong> es una patología viral que afecta significativamente
+              el cultivo de yuca (Manihot esculenta), causando pérdidas económicas y de rendimiento. </p>
+            <button class="toggle-button"
+              style="background-color: green; color: white; border: none; border-radius: 4px; padding: 10px 16px; cursor: pointer;">Leer
+              más</button>
+          </div>
+          <div class="content" style="padding: 16px; display: none;">
+            <p style="font-size: 1em; color: #333;"><strong>Virus del mosaico de la yuca</strong> es el nombre común que
+              se utiliza para
+              referirse a cualquiera de las once especies diferentes de <strong>virus fitopatógenos </strong> del
+              <strong>género Begomovirus</strong>.El virus del mosaico americano de la yuca, El
+              virus del mosaico africano de la yuca (ACMV), el virus del mosaico de la yuca de África oriental (EACMV) y
+              el virus del mosaico de la yuca de Sudáfrica (SACMV) son especies distintas de virus circulares de ADN
+              monocatenario que son transmitidos por moscas blancas y propagan el virus principalmente a través de las
+              plantas de <strong>yuca</strong>.
+            </p>
+            <p>Los virus son miembros de la familia <strong>Geminiviridae </strong> y del género
+              <strong>Begomovirus</strong>. El primer informe de la
+              enfermedad del mosaico de la yuca (DMC) provino de África oriental en 1894. Desde entonces, se han
+              producido epidemias a lo largo de todos los continentes, lo que ha provocado grandes pérdidas
+              económicas y una hambruna devastadora. En 1971, el Instituto Internacional de Agricultura Tropical de
+              Nigeria estableció y utilizó una línea más resistente de yuca, el huésped predominante del patógeno. Esta
+              resistencia funcionó como un control eficaz durante muchos años. Sin embargo, a finales del siglo XX, un
+              virus más virulento estalló en Uganda y se extendió rápidamente. <br>
+              Posteriormente se descubrió que esta cepa altamente virulenta era una combinación o quimera de dos
+              especies distintas de <strong>Begomovirus</strong>.
+            </p>
+            <p>La CMD se maneja principalmente a través de prácticas de fitosanidad, que proporcionan una mejor
+              vigilancia en los cultivos, así como mediante el uso de cría de resistencia convencional. Además, el
+              manejo de vectores y la protección cruzada ayudan a minimizar la transmisión y el desarrollo de síntomas.
+              Si bien las prácticas de manejo son útiles, la alta tasa de recombinación y coinfección de los virus ha
+              hecho que la CMD sea una de las enfermedades más perjudiciales que afectan el suministro de alimentos en
+              África.</p>
+            <h4 style="color: green;">síntomas</h4>
+            <p>La yuca se originó en América del Sur y se introdujo en África en tiempos relativamente recientes. Se
+              sabe que es un cultivo muy tolerante a la sequía con la capacidad de resistir incluso cuando se cultiva en
+              suelos pobres. Cuando la yuca se cultivó por primera vez en África, se utilizó con fines subsidiarios,
+              aunque ahora se considera uno de los cultivos alimentarios básicos más importantes de todo el continente
+              africano. Su producción avanza hacia un sistema industrializado en el que el material vegetal se utiliza
+              para una variedad de productos que incluyen almidón, harina y alimento para animales.</p>
+
+            <p>Como la yuca se propaga vegetativamente, es particularmente vulnerable a los virus y, por lo tanto, los
+              geminivirus de la yuca provocan grandes pérdidas económicas cada año. Cuando estos infectan una planta
+              huésped, se activa el sistema de defensa de la planta. Las plantas utilizan el silenciamiento de genes
+              para
+              suprimir la replicación viral, aunque se ha descubierto que los begomovirus han desarrollado una proteína
+              supresora que actúa en contra de esta defensa natural del huésped. Debido a que diferentes especies de
+              Begomovirus producen diferentes variantes de esta proteína supresora, la coinfección por múltiples
+              especies
+              generalmente conduce a síntomas de enfermedades más graves.</p>
+            <p>Inicialmente, después de la infección de un geminivirus en la yuca, se desarrollan síntomas sistémicos.
+              Estos síntomas incluyen <strong>mosaico clorótico </strong> de las hojas, distorsión de las hojas y
+              retraso en el crecimiento,
+              las hojas desarrollan un color amarillo a verde claro. Los tallos de las hojas tienen una forma de S
+              característica. La planta puede superar la infección, especialmente cuando los síntomas aparecen
+              rápidamente. Un inicio lento del desarrollo de la enfermedad generalmente se correlaciona con la muerte de
+              la planta.</p>
+            <p>Aunque los geminivirus que infectan la yuca causan la mayor parte de su daño económico en la yuca, ya que
+              pueden llevarla a no desarrollar tubérculos o bajar su producción, además que pueden infectar otras
+              plantas.</p>
+            <h4 style="color: green;">Agente causal y ciclo de la enfermedad</h4>
+            <p>Los geminivirus de la yuca son transmitidos de manera persistente por la <strong>mosca blanca (Bemisia
+                tabaci)</strong>, por
+              propagación vegetativa utilizando esquejes de plantas infectadas y ocasionalmente por medios mecánicos. La
+              yuca produce sus primeras hojas entre 2 y 3 semanas después de la siembra; estas hojas jóvenes son luego
+              colonizadas por las viruliferas moscas blancas. Este es el período de infección clave para los geminivirus
+              CMD, ya que no pueden infectar plantas más viejas, normalmente se da en las hojas más jóvenes o en la base
+              de la planta. Como el genoma de los virus tiene dos componentes, ADN A y B, que están encapsulados en
+              partículas geminadas separadas, se requiere una doble inoculación para causar la infección.</p>
+            <p>Generalmente, la <strong> mosca blanca</strong> requiere 3 horas de alimentación para adquirir el virus,
+              un período de
+              latencia de 8 horas, luego de las cuales necesita 10 minutos para infectar las hojas jóvenes o la base.
+              Sin embargo, existe una variación en la literatura especializada en este puntaje, con otras fuentes que
+              citan un tiempo de adquisición de 4 horas y un período de latencia de 4 horas. Los síntomas aparecen
+              después de un período de latencia de 3-5 semanas. Las moscas blancas adultas pueden continuar infectando
+              plantas sanas 48 horas después de la adquisición inicial del virus. Una sola mosca blanca es suficiente
+              para infectar a la planta huésped; sin embargo, la transmisión exitosa aumenta cuando múltiples moscas
+              blancas infectadas se alimentan de la planta.</p>
+            <p>Después de ingresar a la planta a través de las hojas, el virus permanece en las células de las hojas
+              durante 8 días. Como es un virus de ADN monocatenario, necesita ingresar al núcleo de las células de la
+              hoja para replicarse. Después de este período inicial, el virus ingresa al floema y viaja a la base del
+              tallo y sale hacia las ramas. El viaje a las ramas de la planta es mucho más lento que a través del tallo,
+              por lo que los esquejes de ramas de tallos infectados pueden estar libres de enfermedades.</p>
+            <h4 style="color: green;">Ambiente</h4>
+            <p>La gravedad de la enfermedad del mosaico de la yuca se ve afectada por factores ambientales como la
+              intensidad de la luz, el viento, las precipitaciones, la densidad de las plantas y la temperatura. Dado
+              que los virus son transmitidos por la mosca blanca, la propagación del virus dependerá en gran medida del
+              vector. La temperatura es el factor ambiental más importante que controla el tamaño de la población de
+              vectores. En las investigaciones, las estimaciones de temperatura preferidas por vector varían de 20 °C
+              hasta 30 °C hasta 27 °C hasta 32 °C pero generalmente altas temperaturas asociadas con alta fecundidad,
+              rápido desarrollo y mayor longevidad en la mosca blanca. Se ha demostrado que el aumento de la intensidad
+              de la luz aumenta la actividad del vector de la mosca blanca.</p>
+            <p>Las moscas blancas pueden volar a velocidades de hasta 0,2mph, y en condiciones de vientos fuertes pueden
+              moverse distancias mucho mayores en un tiempo más corto, aumentando así la tasa de propagación del virus y
+              mayores daños a los cultivos. Esta propagación dependiente del viento se refleja en la ubicación de la
+              mosca blanca en los campos de yuca, con poblaciones mayores en las fronteras contra el viento y más bajas
+              dentro del campo.</p>
+            <p>La incidencia de virus aumenta cuando la yuca crece vigorosa y robusta. Por lo tanto, la densidad de
+              plantas afecta la propagación del virus, con campos de baja densidad que fomentan una propagación de
+              enfermedades más rápida que los de alta densidad. En las zonas secas, las lluvias pueden ser un factor
+              limitante para el crecimiento de la yuca, por lo que una mayor precipitación se asociará con una mayor
+              incidencia de enfermedades. Las poblaciones de mosca blanca aumentarán con las lluvias, pero las lluvias
+              intensas pueden impedir la propagación de la mosca blanca y, por lo tanto, disminuir la incidencia del
+              virus.</p>
+            <p>El momento de la siembra puede desempeñar un papel importante en la gravedad de la enfermedad; la yuca
+              sembrada en marzo muestra una tasa de incidencia de CMV del 74%, en comparación con el 4% en agosto,
+              estableciendo un patrón distintivo muy grande. La distribución estacional del virus variará con el clima.
+              En climas tipo bosque lluvioso tropical, donde es húmedo la mayor parte del año, la distribución rápida
+              del virus ocurrió de noviembre a junio, y el progreso lento ocurrió de julio a septiembre. Este momento se
+              correlacionó con temperaturas más altas y más bajas. En un estudio de la enfermedad en Costa de Marfil de
+              África, la tasa máxima de propagación de la enfermedad se alcanzó dos meses después de la siembra. Después
+              de tres meses se produce poca o ninguna infección y la variación en la propagación se debe al cambio en la
+              temperatura, la radiación y los niveles de población de mosca blanca.</p>
+            <h4 style="color: green;">Estrategias de control</h4>
+            <p>Las estrategias de control de la enfermedad del mosaico de la yuca incluyen dos sistemas, el saneamiento
+              y la resistencia de las plantas. En este caso, saneamiento significa usar esquejes de plantas sanas para
+              comenzar con una parcela sana y mantener esa parcela sana identificando las plantas no saludables y
+              eliminándolas inmediatamente. Esta estrategia no los protege de ser inoculados por moscas blancas, pero la
+              investigación muestra que el virus es más agresivo en plantas infectadas por esquejes contaminados que por
+              insectos vectores. En el caso de la resistencia, hay variedades específicas que se comportan mejor contra
+              algunos virus que contra otros, por lo que la resistencia de las plantas es posible. Por ejemplo, se ha
+              demostrado que los híbridos que son el resultado del cruce de yuca y otras especies, como Manihot
+              melanobasis y M. glaziovii, tienen una resistencia considerable al CMV.</p>
+            <p>Los métodos de prevención de la propagación del CMV incluyen evitar plantar anfitriones alternativos del
+              virus, como el ricino ( Ricinus communis ), adyacente a la yuca, evitar plantar yuca si los campos vecinos
+              tienen yuca infectada con el virus, ya que estos podrían ser transportados por moscas blancas. Los métodos
+              de prevención también incluyen no plantar anfitriones alternativos del vector del virus Mosca blanca, por
+              ejemplo, tomate.</p>
+            <p>El Ministerio de Agricultura, Seguridad Alimentaria y Cooperativas de Tanzania recomienda arrancar las
+              plantas enfermas una vez a la semana sacándolas a mano. Las plantas deben sacarse del campo y exponerse a
+              la luz del sol para que se sequen y luego quemarlas para eliminar el virus.</p>
+
+            <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+              <h2 style="margin: 0; font-size: 16px; color: #333;">Referencias</h2>
+              <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="color: #007bff;">
+                  https://es.wikipedia.org/wiki/Virus_del_mosaico_de_la_yuca</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+        <script>
+          const buttons = document.querySelectorAll('.toggle-button');
+          const contents = document.querySelectorAll('.content');
+
+          buttons.forEach((button, index) => {
+            button.addEventListener('click', function () {
+              const content = contents[index];
+              content.style.display = content.style.display === 'none' ? 'block' : 'none';
+              this.textContent = content.style.display === 'none' ? 'Leer más' : 'Leer menos';
+            });
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="" style="background-color: green; margin-top: 30px;">
+    <div class="copyrights maxwidth grid">
+      <div class="copytext col6">
+        <p id="copy" style="color: white;"> AgrotechRepelon – Blog de agricultura - © 2024 <a style="color:white;"
+            href="#" target="_blank"> - Contacto</a> <br></p>
+  </footer>
+
+
+  </div>
+  </div>
+</body>
+
+</html>

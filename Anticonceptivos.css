@@ -1,0 +1,29 @@
+.navbar-nav .nav-link {
+    color: white; /* Cambia el color del texto de la barra de navegación */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: white; /* Asegúrate de que el texto activo y en hover siga siendo blanco */
+}
+
+.dropdown-menu {
+    background-color: green; /* Cambia el color de fondo de la barra desplegable */
+}
+
+.dropdown-item {
+    color: white; /* Cambia el color del texto en el menú desplegable */
+}
+
+.dropdown-item:hover {
+    background-color: darkgreen; /* Color de fondo al pasar el ratón */
+    color: white; /* Asegúrate de que el texto siga siendo blanco al pasar el ratón */
+}
+.nav {
+    position: sticky; /* Mantiene la navbar en la parte superior al hacer scroll */
+    top: 0; /* Se asegura de que la navbar esté siempre en la parte superior */
+    z-index: 1000; /* Asegura que la navbar esté por encima de otros elementos */
+}
+
+
+
